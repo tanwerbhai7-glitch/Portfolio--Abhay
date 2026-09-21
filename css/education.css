@@ -1,0 +1,70 @@
+.timeline {
+  position: relative;
+  margin: 36px 0;
+  padding-left: 28px;
+}
+.timeline-marker {
+  position: absolute;
+  left: 6px;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: linear-gradient(var(--accent), var(--border));
+}
+.edu-card {
+  position: relative;
+  max-width: var(--content-width);
+}
+.edu-card::before {
+  content: "";
+  position: absolute;
+  left: -28px;
+  top: 30px;
+  width: 12px; height: 12px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 4px var(--bg-panel);
+}
+
+.edu-card-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.edu-card-head h2 { max-width: 46ch; }
+
+.focus-heading {
+  font-size: 0.9rem;
+  color: var(--text-dim);
+  text-transform: none;
+  margin-top: 22px;
+}
+
+.focus-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+.focus-grid li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-s);
+  background: var(--bg-panel);
+  font-size: 0.9rem;
+  color: var(--text);
+}
+.focus-icon {
+  font-family: var(--font-mono);
+  color: var(--accent-2);
+  width: 22px;
+  text-align: center;
+}
+
+.note-panel { margin-top: 24px; max-width: var(--content-width); }
+.note-panel p:last-child { margin-bottom: 0; }

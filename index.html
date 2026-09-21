@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Profile — Abhay Kumar Yadav</title>
+<meta name="description" content="Portfolio of Abhay Kumar Yadav, BCA (AI/ML) student." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/home.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+  <span class="topbar-path mono">Abhay Yadav</span>
+  <div class="topbar-right">
+    <button class="icon-btn" data-theme-toggle aria-label="Switch to light theme">☀</button>
+    <button class="menu-btn" data-menu-toggle aria-haspopup="true" aria-expanded="false" aria-controls="site-menu" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<nav class="menu-overlay" id="site-menu" data-menu-overlay aria-label="Section navigation">
+  <button class="icon-btn menu-overlay-close" data-menu-close aria-label="Close menu">✕</button>
+  <div class="menu-grid">
+    <a class="menu-card is-active" href="index.html" data-menu-link aria-current="page">
+      <span class="menu-card-index mono">01</span>
+      <span class="menu-card-title">Profile</span>
+      <span class="menu-card-file mono">profile.js</span>
+    </a>
+    <a class="menu-card" href="education.html" data-menu-link>
+      <span class="menu-card-index mono">02</span>
+      <span class="menu-card-title">Education</span>
+      <span class="menu-card-file mono">education.md</span>
+    </a>
+    <a class="menu-card" href="skills.html" data-menu-link>
+      <span class="menu-card-index mono">03</span>
+      <span class="menu-card-title">Skills</span>
+      <span class="menu-card-file mono">skills.json</span>
+    </a>
+    <a class="menu-card" href="projects.html" data-menu-link>
+      <span class="menu-card-index mono">04</span>
+      <span class="menu-card-title">Projects</span>
+      <span class="menu-card-file mono">projects/</span>
+    </a>
+    <a class="menu-card" href="certifications.html" data-menu-link>
+      <span class="menu-card-index mono">05</span>
+      <span class="menu-card-title">Certifications</span>
+      <span class="menu-card-file mono">certificates/</span>
+    </a>
+    <a class="menu-card" href="interests.html" data-menu-link>
+      <span class="menu-card-index mono">06</span>
+      <span class="menu-card-title">Interests</span>
+      <span class="menu-card-file mono">interests.txt</span>
+    </a>
+    <a class="menu-card" href="contact.html" data-menu-link>
+      <span class="menu-card-index mono">07</span>
+      <span class="menu-card-title">Contact</span>
+      <span class="menu-card-file mono">contact.sh</span>
+    </a>
+  </div>
+</nav>
+
+<main class="page">
+  <div class="page-inner">
+    <p class="eyebrow-comment" data-greeting>Welcome to my page —</p>
+
+     <div class="hero-portrait">
+        <div class="avatar-ring">
+          <img src="Abhay yadav image.jpeg" alt="Portrait of Abhay Kumar Yadav"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="avatar-fallback" aria-hidden="true">AY</div>
+        </div>
+        <p class="avatar-caption mono">status: <span class="status-dot"></span> open to opportunities</p>
+      </div>
+
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Abhay Kumar Yadav</h1>
+        <p class="role mono" id="typed-role"></p>
+        <p class="lede">
+          I'm a Computer Applications student who likes turning problems into working software.
+          My base is C, C++ and object-oriented thinking, and right now I'm building on that with
+          data structures and algorithms in C++ while going deeper into AI and machine learning.
+          Outside coursework I enjoy shipping small, responsive web apps end to end.
+        </p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="projects.html">View my project</a>
+          <a class="btn btn-ghost" href="contact.html">Get in touch</a>
+          <a class="btn btn-ghost" href="assets/Abhay_Kumar_Yadav_Resume.pdf" download>Download résumé ↓</a>
+        </div>
+        <ul class="social-row">
+          <li><a href="mailto:tanwerbhai7@gmail.com">tanwerbhai7@gmail.com</a></li>
+          <li><a href="https://linkedin.com/in/abhay-yadav-942232384" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://github.com/tanwerbhai7-glitch" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </div>
+
+      
+    </section>
+
+    <section class="panel reveal snapshot">
+      <h2>At a glance</h2>
+      <div class="snapshot-grid">
+        <div>
+          <span class="snapshot-num mono">4</span>
+          <span class="snapshot-label">languages in daily use</span>
+        </div>
+        <div>
+          <span class="snapshot-num mono">1</span>
+          <span class="snapshot-label">shipped platform — SkillSwap</span>
+        </div>
+        <div>
+          <span class="snapshot-num mono">3</span>
+          <span class="snapshot-label">focus areas — Web, Generative ai, Software developement</span>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <span>&copy; <span id="year"></span> Abhay Kumar Yadav</span>
+</footer>
+
+<button class="back-to-top" data-back-to-top aria-label="Back to top">↑</button>
+
+<script src="js/main.js"></script>
+<script src="js/home.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

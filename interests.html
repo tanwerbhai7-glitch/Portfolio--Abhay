@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Interests — Abhay Kumar Yadav</title>
+<meta name="description" content="Portfolio of Abhay Kumar Yadav, BCA (AI/ML) student." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/interests.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+  <span class="topbar-path mono">abhay-yadav — interests.txt</span>
+  <div class="topbar-right">
+    <button class="icon-btn" data-theme-toggle aria-label="Switch to light theme">☀</button>
+    <button class="menu-btn" data-menu-toggle aria-haspopup="true" aria-expanded="false" aria-controls="site-menu" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<nav class="menu-overlay" id="site-menu" data-menu-overlay aria-label="Section navigation">
+  <button class="icon-btn menu-overlay-close" data-menu-close aria-label="Close menu">✕</button>
+  <div class="menu-grid">
+    <a class="menu-card" href="index.html" data-menu-link>
+      <span class="menu-card-index mono">01</span>
+      <span class="menu-card-title">Profile</span>
+      <span class="menu-card-file mono">profile.js</span>
+    </a>
+    <a class="menu-card" href="education.html" data-menu-link>
+      <span class="menu-card-index mono">02</span>
+      <span class="menu-card-title">Education</span>
+      <span class="menu-card-file mono">education.md</span>
+    </a>
+    <a class="menu-card" href="skills.html" data-menu-link>
+      <span class="menu-card-index mono">03</span>
+      <span class="menu-card-title">Skills</span>
+      <span class="menu-card-file mono">skills.json</span>
+    </a>
+    <a class="menu-card" href="projects.html" data-menu-link>
+      <span class="menu-card-index mono">04</span>
+      <span class="menu-card-title">Projects</span>
+      <span class="menu-card-file mono">projects/</span>
+    </a>
+    <a class="menu-card is-active" href="interests.html" data-menu-link aria-current="page">
+      <span class="menu-card-index mono">05</span>
+      <span class="menu-card-title">Interests</span>
+      <span class="menu-card-file mono">interests.txt</span>
+    </a>
+    <a class="menu-card" href="contact.html" data-menu-link>
+      <span class="menu-card-index mono">07</span>
+      <span class="menu-card-title">Contact</span>
+      <span class="menu-card-file mono">contact.sh</span>
+    </a>
+  </div>
+  <p class="menu-footer">press <span class="mono">Esc</span> to close</p>
+</nav>
+
+<main class="page">
+  <div class="page-inner">
+    <p class="eyebrow-comment">interests.txt</p>
+    <h1>Areas of interest</h1>
+    <p class="lede">What keeps pulling my attention when I'm not working through an assignment.</p>
+
+    <div class="interest-grid">
+      <article class="panel reveal interest-card">
+        <span class="interest-icon" aria-hidden="true">◧</span>
+        <h2>Web Development</h2>
+        <p>Turning a static idea into something people can actually click through — I like the
+          feedback loop of building an interface and immediately seeing it respond.</p>
+      </article>
+
+      <article class="panel reveal interest-card">
+        <span class="interest-icon" aria-hidden="true">✳</span>
+        <h2>Artificial Intelligence &amp; Machine Learning</h2>
+        <p>The part of the course I look forward to most — working out how a model learns from
+          data, and where that can realistically help solve a real problem.</p>
+      </article>
+
+      <article class="panel reveal interest-card">
+        <span class="interest-icon" aria-hidden="true">{ }</span>
+        <h2>Software Development</h2>
+        <p>Beyond a single language or framework — I care about writing code that's structured
+          clearly enough that someone else (or future me) can pick it up.</p>
+      </article>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <span>&copy; <span id="year"></span> Abhay Kumar Yadav</span>
+</footer>
+
+<button class="back-to-top" data-back-to-top aria-label="Back to top">↑</button>
+
+<script src="js/main.js"></script>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

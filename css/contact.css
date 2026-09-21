@@ -1,0 +1,51 @@
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 24px;
+  margin-top: 30px;
+  align-items: start;
+}
+
+.field { margin-bottom: 18px; display: flex; flex-direction: column; }
+.field label { font-size: 0.86rem; color: var(--text-dim); margin-bottom: 6px; }
+.field input,
+.field textarea {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-s);
+  padding: 11px 13px;
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  resize: vertical;
+}
+.field input:focus,
+.field textarea:focus {
+  border-color: var(--accent);
+  outline: none;
+}
+.field-error {
+  min-height: 1.2em;
+  font-size: 0.78rem;
+  color: var(--accent-red);
+  margin-top: 4px;
+}
+
+.form-note { font-size: 0.82rem; color: var(--text-faint); margin-top: 14px; }
+.form-status { font-size: 0.86rem; color: var(--accent); min-height: 1.2em; }
+
+.contact-cards { display: grid; gap: 14px; }
+.contact-card { padding: 18px 20px; }
+.contact-label { color: var(--text-faint); display: block; margin-bottom: 6px; font-size: 0.76rem; }
+.contact-value-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.contact-value-row a:hover { color: var(--accent); }
+.contact-value-row .icon-btn { width: 30px; height: 30px; flex-shrink: 0; }
+
+@media (max-width: 780px) {
+  .contact-layout { grid-template-columns: 1fr; }
+}

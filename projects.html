@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Projects — Abhay Kumar Yadav</title>
+<meta name="description" content="Portfolio of Abhay Kumar Yadav, BCA (AI/ML) student." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/projects.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+  <span class="topbar-path mono">abhay-yadav — projects/</span>
+  <div class="topbar-right">
+    <button class="icon-btn" data-theme-toggle aria-label="Switch to light theme">☀</button>
+    <button class="menu-btn" data-menu-toggle aria-haspopup="true" aria-expanded="false" aria-controls="site-menu" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<nav class="menu-overlay" id="site-menu" data-menu-overlay aria-label="Section navigation">
+  <button class="icon-btn menu-overlay-close" data-menu-close aria-label="Close menu">✕</button>
+  <div class="menu-grid">
+    <a class="menu-card" href="index.html" data-menu-link>
+      <span class="menu-card-index mono">01</span>
+      <span class="menu-card-title">Profile</span>
+      <span class="menu-card-file mono">profile.js</span>
+    </a>
+    <a class="menu-card" href="education.html" data-menu-link>
+      <span class="menu-card-index mono">02</span>
+      <span class="menu-card-title">Education</span>
+      <span class="menu-card-file mono">education.md</span>
+    </a>
+    <a class="menu-card" href="skills.html" data-menu-link>
+      <span class="menu-card-index mono">03</span>
+      <span class="menu-card-title">Skills</span>
+      <span class="menu-card-file mono">skills.json</span>
+    </a>
+    <a class="menu-card is-active" href="projects.html" data-menu-link aria-current="page">
+      <span class="menu-card-index mono">04</span>
+      <span class="menu-card-title">Projects</span>
+      <span class="menu-card-file mono">projects/</span>
+    </a>
+    <a class="menu-card" href="certifications.html" data-menu-link>
+      <span class="menu-card-index mono">05</span>
+      <span class="menu-card-title">Certifications</span>
+      <span class="menu-card-file mono">certificates/</span>
+    </a>
+    <a class="menu-card" href="interests.html" data-menu-link>
+      <span class="menu-card-index mono">06</span>
+      <span class="menu-card-title">Interests</span>
+      <span class="menu-card-file mono">interests.txt</span>
+    </a>
+    <a class="menu-card" href="contact.html" data-menu-link>
+      <span class="menu-card-index mono">07</span>
+      <span class="menu-card-title">Contact</span>
+      <span class="menu-card-file mono">contact.sh</span>
+    </a>
+  </div>
+  <p class="menu-footer">press <span class="mono">Esc</span> to close</p>
+</nav>
+
+<main class="page">
+  <div class="page-inner">
+    <p class="eyebrow-comment">projects/</p>
+    <h1>Projects</h1>
+    <p class="lede">What I've actually built, and what's queued up next.</p>
+
+    <div class="project-grid">
+      <article class="panel reveal project-card" data-project>
+        <div class="project-card-top">
+          <h2>SkillSwap</h2>
+          <span class="tag">Skill-exchange platform</span>
+        </div>
+        <p>
+          A platform where people list what they can teach and what they want to learn, then
+          find each other through categories instead of a generic search box.
+        </p>
+        <ul class="project-points">
+          <li>Browse and filter skills by category</li>
+          <li>Detailed skill pages for each listing</li>
+          <li>A request workflow to start a skill exchange</li>
+        </ul>
+        <div class="project-tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+        </div>
+        <div class="btn-row">
+          <button class="btn btn-ghost" data-open-modal="skillswap">Read more</button>
+          <a class="btn btn-ghost" href="https://github.com/tanwerbhai7-glitch" target="_blank" rel="noopener">View on GitHub ↗</a>
+        </div>
+      </article>
+
+      <article class="panel reveal project-card project-card-empty">
+        <div class="project-card-top">
+          <h2>Next build</h2>
+          <span class="tag">In planning</span>
+        </div>
+        <p>
+          This slot is open. I'm currently sketching a project that leans further into AI/ML —
+          check back, or follow along on GitHub.
+        </p>
+        <div class="btn-row">
+          <a class="btn btn-ghost" href="https://github.com/tanwerbhai7-glitch" target="_blank" rel="noopener">Follow progress ↗</a>
+        </div>
+      </article>
+    </div>
+
+    <div class="modal-backdrop" data-modal-backdrop hidden>
+      <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="icon-btn modal-close" data-close-modal aria-label="Close">✕</button>
+        <h2 id="modal-title">SkillSwap — Skill Exchange Platform</h2>
+        <p>
+          SkillSwap is built around a simple idea: everyone has something to teach and something
+          they want to learn. Instead of a flat directory, listings are organised by category so a
+          visitor can browse toward what interests them.
+        </p>
+        <h3>Highlights</h3>
+        <ul class="project-points">
+          <li>Category-based browsing to discover relevant skills quickly</li>
+          <li>Detailed skill views with the information a learner actually needs</li>
+          <li>A request workflow that turns interest into an actual exchange</li>
+          <li>Interactive, responsive interface built for everyday use</li>
+        </ul>
+        <div class="project-tags modal-stack">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <span>&copy; <span id="year"></span> Abhay Kumar Yadav</span>
+</footer>
+
+<button class="back-to-top" data-back-to-top aria-label="Back to top">↑</button>
+
+<script src="js/main.js"></script>
+<script src="js/projects.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Education — Abhay Kumar Yadav</title>
+<meta name="description" content="Portfolio of Abhay Kumar Yadav, BCA (AI/ML) student." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/education.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+  <span class="topbar-path mono">abhay-yadav — education.md</span>
+  <div class="topbar-right">
+    <button class="icon-btn" data-theme-toggle aria-label="Switch to light theme">☀</button>
+    <button class="menu-btn" data-menu-toggle aria-haspopup="true" aria-expanded="false" aria-controls="site-menu" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<nav class="menu-overlay" id="site-menu" data-menu-overlay aria-label="Section navigation">
+  <button class="icon-btn menu-overlay-close" data-menu-close aria-label="Close menu">✕</button>
+  <div class="menu-grid">
+    <a class="menu-card" href="index.html" data-menu-link>
+      <span class="menu-card-index mono">01</span>
+      <span class="menu-card-title">Profile</span>
+      <span class="menu-card-file mono">profile.js</span>
+    </a>
+    <a class="menu-card is-active" href="education.html" data-menu-link aria-current="page">
+      <span class="menu-card-index mono">02</span>
+      <span class="menu-card-title">Education</span>
+      <span class="menu-card-file mono">education.md</span>
+    </a>
+    <a class="menu-card" href="skills.html" data-menu-link>
+      <span class="menu-card-index mono">03</span>
+      <span class="menu-card-title">Skills</span>
+      <span class="menu-card-file mono">skills.json</span>
+    </a>
+    <a class="menu-card" href="projects.html" data-menu-link>
+      <span class="menu-card-index mono">04</span>
+      <span class="menu-card-title">Projects</span>
+      <span class="menu-card-file mono">projects/</span>
+    </a>
+    <a class="menu-card" href="certifications.html" data-menu-link>
+      <span class="menu-card-index mono">05</span>
+      <span class="menu-card-title">Certifications</span>
+      <span class="menu-card-file mono">certificates/</span>
+    </a>
+    <a class="menu-card" href="interests.html" data-menu-link>
+      <span class="menu-card-index mono">06</span>
+      <span class="menu-card-title">Interests</span>
+      <span class="menu-card-file mono">interests.txt</span>
+    </a>
+    <a class="menu-card" href="contact.html" data-menu-link>
+      <span class="menu-card-index mono">07</span>
+      <span class="menu-card-title">Contact</span>
+      <span class="menu-card-file mono">contact.sh</span>
+    </a>
+  </div>
+  <p class="menu-footer">press <span class="mono">Esc</span> to close</p>
+</nav>
+
+<main class="page">
+  <div class="page-inner">
+    <p class="eyebrow-comment">education.md</p>
+    <h1>Education</h1>
+    <p class="lede">The academic path that's shaping how I think about software — grounded in fundamentals, growing toward AI and machine learning.</p>
+
+    <div class="timeline">
+      <div class="timeline-marker" aria-hidden="true"></div>
+
+      <article class="edu-card panel reveal">
+        <div class="edu-card-head">
+          <h2>Bachelor of Computer Applications (BCA) — AI/ML</h2>
+          <span class="tag">In progress</span>
+        </div>
+        <p>
+          A specialization track that pairs the standard computer-applications core with a dedicated
+          focus on artificial intelligence and machine learning — from programming fundamentals up to
+          applied AI concepts.
+        </p>
+        <h3 class="focus-heading">Focus areas</h3>
+        <ul class="focus-grid">
+          <li><span class="focus-icon" aria-hidden="true">{ }</span>Programming Fundamentals</li>
+          <li><span class="focus-icon" aria-hidden="true">▣</span>Object-Oriented Programming</li>
+          <li><span class="focus-icon" aria-hidden="true">◧</span>Web Development</li>
+          <li><span class="focus-icon" aria-hidden="true">⇄</span>Data Structures &amp; Algorithms</li>
+          <li><span class="focus-icon" aria-hidden="true">✳</span>Artificial Intelligence &amp; Machine Learning</li>
+        </ul>
+      </article>
+    </div>
+
+    <section class="panel reveal note-panel">
+      <p class="eyebrow-comment">note</p>
+      <p>
+        Coursework is the foundation — most of what shows up in <a href="projects.html">my project work</a>
+        comes from applying these fundamentals outside the classroom, which is also where I spend most of
+        my learning time.
+      </p>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <span>&copy; <span id="year"></span> Abhay Kumar Yadav</span>
+  <span>Built with HTML, CSS &amp; JavaScript — no frameworks</span>
+</footer>
+
+<button class="back-to-top" data-back-to-top aria-label="Back to top">↑</button>
+
+<script src="js/main.js"></script>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

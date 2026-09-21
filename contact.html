@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact — Abhay Kumar Yadav</title>
+<meta name="description" content="Portfolio of Abhay Kumar Yadav, BCA (AI/ML) student." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/contact.css" />
+</head>
+
+<body>
+
+<header class="topbar">
+  <span class="dot red"></span>
+  <span class="dot yellow"></span>
+  <span class="dot green"></span>
+
+  <span class="topbar-path mono">abhay-yadav — contact.sh</span>
+
+  <div class="topbar-right">
+    <button class="icon-btn" data-theme-toggle aria-label="Switch to light theme">☀</button>
+
+    <button
+      class="menu-btn"
+      data-menu-toggle
+      aria-haspopup="true"
+      aria-expanded="false"
+      aria-controls="site-menu"
+      aria-label="Open menu"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+
+
+<nav
+  class="menu-overlay"
+  id="site-menu"
+  data-menu-overlay
+  aria-label="Section navigation"
+>
+
+  <button
+    class="icon-btn menu-overlay-close"
+    data-menu-close
+    aria-label="Close menu"
+  >
+    ✕
+  </button>
+
+  <div class="menu-grid">
+
+    <a class="menu-card" href="index.html" data-menu-link>
+      <span class="menu-card-index mono">01</span>
+      <span class="menu-card-title">Profile</span>
+      <span class="menu-card-file mono">profile.js</span>
+    </a>
+
+    <a class="menu-card" href="education.html" data-menu-link>
+      <span class="menu-card-index mono">02</span>
+      <span class="menu-card-title">Education</span>
+      <span class="menu-card-file mono">education.md</span>
+    </a>
+
+    <a class="menu-card" href="skills.html" data-menu-link>
+      <span class="menu-card-index mono">03</span>
+      <span class="menu-card-title">Skills</span>
+      <span class="menu-card-file mono">skills.json</span>
+    </a>
+
+    <a class="menu-card" href="projects.html" data-menu-link>
+      <span class="menu-card-index mono">04</span>
+      <span class="menu-card-title">Projects</span>
+      <span class="menu-card-file mono">projects/</span>
+    </a>
+
+    <a class="menu-card" href="certifications.html" data-menu-link>
+      <span class="menu-card-index mono">05</span>
+      <span class="menu-card-title">Certifications</span>
+      <span class="menu-card-file mono">certificates/</span>
+    </a>
+
+    <a class="menu-card" href="interests.html" data-menu-link>
+      <span class="menu-card-index mono">06</span>
+      <span class="menu-card-title">Interests</span>
+      <span class="menu-card-file mono">interests.txt</span>
+    </a>
+
+    <a
+      class="menu-card is-active"
+      href="contact.html"
+      data-menu-link
+      aria-current="page"
+    >
+      <span class="menu-card-index mono">06</span>
+      <span class="menu-card-title">Contact</span>
+      <span class="menu-card-file mono">contact.sh</span>
+    </a>
+
+  </div>
+
+  <p class="menu-footer">
+    press <span class="mono">Esc</span> to close
+  </p>
+
+</nav>
+
+
+<main class="page">
+
+  <div class="page-inner">
+
+    <p class="eyebrow-comment">contact.sh</p>
+
+    <h1>Get in touch</h1>
+
+    <p class="lede">
+      Have a project, an opportunity, or just want to talk about AI/ML?
+      Send a message or reach me directly.
+    </p>
+
+
+    <div class="contact-layout">
+
+      <!-- Contact Form -->
+      <form
+        class="panel reveal contact-form"
+        id="contact-form"
+        novalidate
+      >
+
+        <div class="field">
+
+          <label for="name">Name</label>
+
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            autocomplete="name"
+          />
+
+          <span
+            class="field-error"
+            data-error-for="name"
+          ></span>
+
+        </div>
+
+
+        <div class="field">
+
+          <label for="email">Email</label>
+
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            autocomplete="email"
+          />
+
+          <span
+            class="field-error"
+            data-error-for="email"
+          ></span>
+
+        </div>
+
+
+        <div class="field">
+
+          <label for="message">Message</label>
+
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            required
+          ></textarea>
+
+          <span
+            class="field-error"
+            data-error-for="message"
+          ></span>
+
+        </div>
+
+
+        <button
+          type="submit"
+          class="btn btn-primary"
+        >
+          Send message
+        </button>
+
+
+        <p class="form-note">
+          This opens your email app with the message pre-filled —
+          the site itself has no backend.
+        </p>
+
+        <p
+          class="form-status"
+          data-form-status
+          role="status"
+          aria-live="polite"
+        ></p>
+
+      </form>
+
+
+      <!-- Contact Information -->
+      <aside class="contact-cards">
+
+
+        <!-- Email -->
+        <div class="panel reveal contact-card">
+
+          <span class="contact-label mono">
+            Email
+          </span>
+
+          <div class="contact-value-row">
+
+            <a href="mailto:tanwerbhai7@gmail.com">
+              tanwerbhai7@gmail.com
+            </a>
+
+            <button
+              class="icon-btn"
+              data-copy="tanwerbhai7@gmail.com"
+              aria-label="Copy email"
+            >
+              ⧉
+            </button>
+
+          </div>
+
+        </div>
+
+
+        <!-- Phone -->
+        <div class="panel reveal contact-card">
+
+          <span class="contact-label mono">
+            Phone
+          </span>
+
+          <div class="contact-value-row">
+
+            <a href="tel:+918407814247">
+              +91 84******47
+            </a>
+
+            <button
+              class="icon-btn"
+              data-copy="+91 84078 14247"
+              aria-label="Copy phone number"
+            >
+              ⧉
+            </button>
+
+          </div>
+
+        </div>
+
+
+        <!-- LinkedIn -->
+        <div class="panel reveal contact-card">
+
+          <span class="contact-label mono">
+            LinkedIn
+          </span>
+
+          <div class="contact-value-row">
+
+            <a
+              href="https://linkedin.com/in/abhay-yadav-942232384"
+              target="_blank"
+              rel="noopener"
+            >
+              abhay-yadav-942232384
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- GitHub -->
+        <div class="panel reveal contact-card">
+
+          <span class="contact-label mono">
+            GitHub
+          </span>
+
+          <div class="contact-value-row">
+
+            <a
+              href="https://github.com/tanwerbhai7-glitch"
+              target="_blank"
+              rel="noopener"
+            >
+              tanwerbhai7-glitch
+            </a>
+
+          </div>
+
+        </div>
+
+      </aside>
+
+    </div>
+
+  </div>
+
+</main>
+
+
+<footer>
+
+  <span>
+    &copy;
+    <span id="year"></span>
+    Abhay Kumar Yadav
+  </span>
+
+</footer>
+
+
+<button
+  class="back-to-top"
+  data-back-to-top
+  aria-label="Back to top"
+>
+  ↑
+</button>
+
+
+<script src="js/main.js"></script>
+<script src="js/contact.js"></script>
+
+<script>
+  document.getElementById('year').textContent =
+    new Date().getFullYear();
+</script>
+
+</body>
+</html>
