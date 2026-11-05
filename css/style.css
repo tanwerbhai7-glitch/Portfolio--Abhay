@@ -26,7 +26,7 @@
 
   --radius-s: 4px;
   --radius-m: 10px;
-  --content-width: 880px;
+  --content-width: 100%;
 }
 
 [data-theme="light"] {
@@ -42,14 +42,17 @@
 }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  font-size: clamp(14px, calc(13px + 0.25vw), 16px);
+}
 
 body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
   font-family: var(--font-body);
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   transition: background 0.25s ease, color 0.25s ease;
@@ -63,6 +66,7 @@ h1, h2, h3, h4 {
   color: var(--text);
 }
 
+h1 { font-size: clamp(2rem, 5vw, 3rem); }
 p { margin: 0 0 1em; color: var(--text-dim); max-width: 62ch; }
 a { color: inherit; text-decoration: none; }
 ul { margin: 0; padding: 0; list-style: none; }
@@ -313,12 +317,16 @@ button { font-family: inherit; }
   .menu-card-title { font-size: 1.15rem; }
 }
 
+@media (max-width: 380px) {
+  .menu-grid { grid-template-columns: 1fr; }
+}
+
 /* ---------------- page content wrapper (per-page layout) ---------------- */
 main.page { padding-top: 58px; }
 .page-inner {
-  max-width: 1080px;
+  width: 100%;
   margin: 0 auto;
-  padding: 48px clamp(20px, 5vw, 64px) 64px;
+  padding: 48px clamp(20px, 5vw, 80px) 64px;
 }
 
 .eyebrow-comment {
@@ -369,7 +377,7 @@ main.page { padding-top: 58px; }
   border: 1px solid var(--border);
   border-radius: var(--radius-m);
   background: var(--bg-panel-raised);
-  padding: 26px;
+  padding: clamp(18px, 3vw, 26px);
 }
 
 .grid {

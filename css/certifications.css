@@ -82,7 +82,7 @@
   font-size: 0.72rem;
 }
 
-.cert-body { padding: 24px; }
+.cert-body { padding: clamp(18px, 3vw, 24px); }
 
 .cert-meta-row {
   display: flex;
